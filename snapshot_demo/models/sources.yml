@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: staging
+    database: DBT_DEMO_TEST_DEVELOP
+    schema: STAGING
+    tables:
+      - name: contrato_cliente_check
+        description: "Tabla fuente para el snapshot basado en Check Columns."
+      - name: contrato_cliente_timestamp
+        description: "Tabla fuente para el snapshot basado en Timestamps."
